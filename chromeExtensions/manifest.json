@@ -1,0 +1,48 @@
+{
+  "manifest_version": 2,
+  "minimum_chrome_version": "34",
+  "homepage_url": "https://wmdirect.com.br",
+  "name": "WM Direct - Presentations",
+  "version": "0.1",
+  "short_name": "WebMeeting PST",
+  "author": "Michael Douglas Barbosa Araujo",
+
+  "description": "Plugin responsável por permitir que o usuário forneça material, videos e entre outros na plataforma WMDiretct",
+
+  "icons": {
+    "16": "logo_16x16.png",
+    "48": "logo_48x48.png",
+    "128": "logo_128x128.png"
+  },
+
+  "page_action": {
+    "default_icon": {
+      "16": "logo_16x16.png"
+    },
+    "default_title": "WebMeeting",
+    "default_popup": "index.html"
+  },
+
+  "permissions": [
+    "http://*/*",
+    "https://*/*",
+    "declarativeContent",
+    "tabs"
+  ],
+
+ "content_security_policy": "script-src 'self' 'unsafe-eval' https://www.youtube.com; object-src 'self' ",
+
+  "background": {
+    "scripts": ["background-script.js"],
+    "persistent": false
+  },
+
+  "content_scripts": [
+    {
+      "js": ["inject/jquery.js", "inject/content-script.js"],
+      "css": ["inject/content-style.css"],
+      "all_frames": true,
+      "matches": ["*://*.wmdirect.com.br/*", "*://wmdirect.com.br/*", "*://*.www.youtube.com/*"]
+    }
+  ]
+}
