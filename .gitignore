@@ -1,10 +1,10 @@
 .idea/
 broadcast/
 loc8r/node_modules
-KANBAN_REACT/landing/mp4/
-KANBAN_REACT/landing/camtasia/
-KANBAN_REACT/landing/modelo.txt
-KANBAN_REACT/landing/node_modules/
-KANBAN_REACT/landing/bower_components/
-KANBAN_REACT/landing/build/
-KANBAN_REACT/landing/dist/
+Site_Novo/landing/mp4/
+Site_Novo/landing/camtasia/
+Site_Novo/landing/modelo.txt
+Site_Novo/landing/node_modules/
+Site_Novo/landing/bower_components/
+Site_Novo/landing/build/
+Site_Novo/landing/dist/
