@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "contacts"
+		},
+		{
+			"path": "reactnd-contacts-server"
+		}
+	],
+	"settings": {}
+}
